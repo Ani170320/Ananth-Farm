@@ -81,6 +81,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              {links.legal.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-cream/50 hover:text-cream transition-colors text-sm uppercase tracking-widest"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -155,15 +165,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-cream/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/60">
+        <div className="pt-8 border-t border-cream/20 flex flex-col md:flex-row justify-center items-center gap-4 text-xs text-cream/40">
           <p>&copy; {new Date().getFullYear()} Ananth Farm Mangoes. All rights reserved.</p>
-          <div className="flex gap-4">
-            {links.legal.map((link) => (
-              <a key={link.name} href={link.href} className="hover:text-cream transition-colors">
-                {link.name}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>
