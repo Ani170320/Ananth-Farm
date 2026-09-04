@@ -11,6 +11,7 @@ import { FAQ } from "@/components/shop/FAQ";
 import { Gifting } from "@/components/home/Gifting";
 import { FarmVisit } from "@/components/home/FarmVisit";
 import { Waitlist } from "@/components/home/Waitlist";
+import { AskAnanthSection } from "@/components/home/AskAnanthSection";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       <Gifting />
       <FarmVisit />
       <Waitlist />
+      <AskAnanthSection />
       <FinalCTA />
     </>
   );
