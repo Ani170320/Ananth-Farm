@@ -6,14 +6,20 @@ import { Play } from "lucide-react";
 export function HarvestVideo() {
   return (
     <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-dark">
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-60"
-        src="https://cdn.coverr.co/videos/coverr-sun-shining-through-the-trees-4328/1080p.mp4" 
+      <div
+        className="absolute inset-0 w-full h-full opacity-60"
+        dangerouslySetInnerHTML={{
+          __html: `
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full h-full object-cover"
+              src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+            ></video>
+          `,
+        }}
       />
       
       {/* Gradient Overlay for text readability */}
